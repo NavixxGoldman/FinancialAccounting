@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Sen', sans-serif;
+    background-color:rgba(192, 189, 189, 0.521);
+    }
+    .box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 40px;
+    background: rgba(241, 236, 236, 0.8);
+    box-sizing: border-box;
+    box-shadow: -7px 7px 17px rgb(128,128,128);
+    border-radius: 20px;
+    }
+    .box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    text-align: center;
+    }
+    .box .inputbox{
+    position: relative;
+    }
+    .box .inputbox input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    background: transparent;
+    }
+    input[type=button]{
+    border: none;
+    color: #fff;
+    background-color: #03a9f4;
+    cursor: pointer;
+    border-radius:5px;
+    width: 80px;
+    height: 40px;
+    position: relative;
+    right: -75%;
+    }
+    .box .inputbox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+    }
+    .box .inputbox input:focus ~ label,
+    .box .inputbox input:valid ~ label
+    {
+    top: -18px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 12px;
+    }
+    
+    
+    a {
+    color:#000;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    right: 29%;
+    }
+    
+    @media screen and (max-width: 400px){
+    .box{
+    position: absolute;
+    margin:auto;
+    transform:translate(-50%,-50%);
+    width:250px;
+    padding: 40px;
+    background: rgba(241, 236, 236, 0.8);
+    box-sizing: border-box;
+    box-shadow: -7px 7px 17px rgb(128,128,128);
+    border-radius: 20px;
+    }
+    input[type=button]­­{
+        background: transparent;
+    border: none;
+    color: #fff;
+    background: #03a9f4;
+    cursor: pointer;
+    border-radius:5px;
+    width: 80px;
+    height: 40px;
+    position: relative;
+    right: -24%;
+    }
+    
+    
+    .forgot{
+    color:#000;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute;
+    right: 25%;
+    top:90%;
+    }
+    }
